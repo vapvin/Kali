@@ -10,11 +10,15 @@ int calculator(int a, int b)
 	printf("\n");
 }
 
+int nextcalculator(int a, int b)
+{
+}
+
 int main(void)
 {
-	calculator(88, 99);
-	calculator(117, 4567);
-	calculator(7832457, 45578);
+	nextcalculator(88, 99);
+	nextcalculator(117, 4567);
+	nextcalculator(7832457, 45578);
 
 	system("pause");
 
