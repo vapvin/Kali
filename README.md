@@ -1,12 +1,6 @@
 # Kali Study For Hacking
 
----
-
----
-
 ## This Kali Linux Test and Study Repository for Hacking
-
----
 
 ### 칼리리눅스의 활용과 Hacking Trace를 공부하기 위한 레포입니다.
 
