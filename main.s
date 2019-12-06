@@ -1,10 +1,5 @@
 section .data
-<<<<<<< HEAD
-	msg db "Hello World \n"
-=======
-	msg db "Hello World"
-	msg db "What is Assembly?"
->>>>>>> refs/remotes/origin/master
+	msg db "Hello World \n"; mse db "What is not work?"
 section .text
 	global_start
 
@@ -20,7 +15,7 @@ _start:
 
 	mov rax, 1
 	mov rdi, 1
-	mov rsi, msg
+	mov rsi, mse
 	mov rdx, 12
 	syscall
 	mov rax, 60
