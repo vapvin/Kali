@@ -1,6 +1,8 @@
 #include <stdio.h>
+#define _CRT_SECURE_NO_WRANINGS
 
-int calculator(int a, int b) {
+int calculator(int a, int b)
+{
 	printf("%d + %d = %d \n", a, b, a + b);
 	printf("%d - %d = %d \n", a, b, a - b);
 	printf("%d * %d = %d \n", a, b, a * b);
@@ -8,15 +10,13 @@ int calculator(int a, int b) {
 	printf("\n");
 }
 
-int main(void) {
+int main(void)
+{
 	calculator(88, 99);
 	calculator(117, 4567);
-	calculator(7832457,45578);
-	
+	calculator(7832457, 45578);
+
 	system("pause");
 
 	return 0;
 }
-
-
-
