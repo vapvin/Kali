@@ -1,5 +1,5 @@
 section .data
-	msg db "Hello World"
+	msg db "Hello World \n"
 section .text
 	global_start
 
