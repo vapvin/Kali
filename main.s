@@ -1,5 +1,5 @@
 section .data
-	msg db "Hello World \n"; mse db "What is not work?"
+	msg db "Hello World"
 section .text
 	global_start
 
