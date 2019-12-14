@@ -35,4 +35,3 @@ _start:
     mov rax, 60
 
     syscall
-
