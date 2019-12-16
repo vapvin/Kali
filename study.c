@@ -3,11 +3,21 @@
 
 int main(void)
 {
-    int a = 5;
-    int *b = &a;
+    int a[] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+    };
 
-    printf("%d \n", a);
-    printf("%d \n", *b);
+    int *b = a;
+
+    printf("%d", b[2]);
 
     return 0;
 }
