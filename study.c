@@ -1,23 +1,22 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-void myFunction(void)
+int add(int a, int b)
 {
-    printf("Hello My Function");
+    return a + b;
 }
 
-void yourFunction(void)
+int minus(int a, int b)
 {
-    printf("Hello Your Function");
+    return a - b;
 }
 
 int main(void)
 {
-    void(*fp()) = myFunction;
-    fp();
-
-    fp = yourFunction;
-    fp();
+    int (*fp)(int, int) = add;
+    printf("%d", fp(3, 10));
+    fp = minus;
+    printf("%d", fp(3, 10));
 
     return 0;
 }
