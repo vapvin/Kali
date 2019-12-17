@@ -6,8 +6,10 @@ int main(void)
 {
     int *a = malloc(sizeof(int));
     printf("%d", a);
+    free(a);
     *a = malloc(sizeof(int));
     printf("%d", a);
+    free(a);
 
     return 0;
 }
