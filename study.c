@@ -1,15 +1,23 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-#include <stdlib.h>
+
+void myFunction(void)
+{
+    printf("Hello My Function");
+}
+
+void yourFunction(void)
+{
+    printf("Hello Your Function");
+}
 
 int main(void)
 {
-    int *a = malloc(sizeof(int));
-    printf("%d", a);
-    free(a);
-    *a = malloc(sizeof(int));
-    printf("%d", a);
-    free(a);
+    void(*fp()) = myFunction;
+    fp();
+
+    fp = yourFunction;
+    fp();
 
     return 0;
 }
