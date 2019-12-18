@@ -20,5 +20,14 @@ int main(void)
         fscanf(fp, "%s %d", &(students + i)->name, &(students + i)->score);
         printf("이름: %s, 성적: %d ", (students + i)->name, (students + i)->score);
     }
+
+    for (int i = 0; i < n; i++)
+    {
+        sum += (students + i)->score;
+    }
+
+    free(students);
+    fcolse(fp);
+    printf("점수평균: %.2f\n", (double)sum / n);
     return 0;
 }
