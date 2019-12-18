@@ -6,17 +6,15 @@ int add(int a, int b)
     return a + b;
 }
 
-int minus(int a, int b)
+int (*process(char *a))(int, int)
 {
-    return a - b;
+    printf("%s\n", a);
+    return add;
 }
 
 int main(void)
 {
-    int (*fp)(int, int) = add;
-    printf("%d", fp(3, 10));
-    fp = minus;
-    printf("%d", fp(3, 10));
+    printf("%d", process("10과 20을 더한 값을 출력하여 보겠습니다.")(10, 20));
 
     return 0;
 }
