@@ -12,12 +12,12 @@ typedef struct
 
 int main(void)
 {
-    Student s = {"20191212", "문현규", 7, "Computer"};
+    Student *s = malloc(sizeof() Student);
 
-    printf("%s\n", s.studentId);
-    printf("%s\n", s.name);
-    printf("%d\n", s.grade);
-    printf("%s\n", s.major);
+    printf("%s\n", s->studentId);
+    printf("%s\n", s->name);
+    printf("%d\n", s->grade);
+    printf("%s\n", s->major);
 
     return 0;
 }
