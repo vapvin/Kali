@@ -2,17 +2,17 @@
 #include <stdio.h>
 #include <string.h>
 
-struct Student
+typedef struct
 {
     char studentId[10];
     char name[10];
     int grade;
     char major[100];
-};
+} Student;
 
 int main(void)
 {
-    struct Student s = {"20191212", "문현규", 7, "Computer"}
+    Student s = {"20191212", "문현규", 7, "Computer"};
 
     printf("%s\n", s.studentId);
     printf("%s\n", s.name);
