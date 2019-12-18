@@ -12,11 +12,7 @@ struct Student
 
 int main(void)
 {
-    struct Student s;
-    strcpy(s.studentId, "20190317");
-    strcpy(s.name, "문현규");
-    strcpy(s.major, "Computer");
-    s.grade = 98;
+    struct Student s = {"20191212", "문현규", 7, "Computer"}
 
     printf("%s\n", s.studentId);
     printf("%s\n", s.name);
