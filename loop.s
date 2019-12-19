@@ -35,4 +35,10 @@ _start:
 	mov rdx, 1
 	mov r10, 1
 
-	
+again:
+	cmp r10, 100
+	je done
+	syscall
+	mov rax, 1
+	inc r10
+	jmp again
