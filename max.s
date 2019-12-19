@@ -1,4 +1,4 @@
-section .text
+xsection .text
 	global _start
 
 _start:
