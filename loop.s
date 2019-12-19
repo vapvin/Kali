@@ -42,3 +42,8 @@ again:
 	mov rax, 1
 	inc r10
 	jmp again
+
+done:
+	mov rax, 60
+	mov rdi, 0
+	syscall
