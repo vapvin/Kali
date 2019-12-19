@@ -20,3 +20,7 @@ _start:
 	mov rdx, 63
 
 	syscall
+
+	mov rax, 60
+
+	syscall
