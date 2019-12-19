@@ -3,12 +3,6 @@
 #include <string.h>
 #include <stdlib.h>
 
-typedef struct
-{
-    char name[20];
-    int score;
-} Student;
-
 int main(void)
 {
 
