@@ -3,10 +3,17 @@
 #include <string.h>
 #include <stdlib.h>
 
-int main(void)
+typedef struct
 {
+    int age;
+    char name[20];
+    int birth;
 
-    printf("Hello World");
+}
+
+int
+main(void)
+{
 
     return 0;
 }
