@@ -5,13 +5,9 @@
 
 typedef struct
 {
-    int age;
-    char name[20];
-    int birth;
 
 }
 
-int
 main(void)
 {
 
