@@ -2,14 +2,13 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#define SIZE 1000
 
-typedef struct
+int main(void)
 {
+    char a[SIZE];
 
-}
-
-main(void)
-{
-
+    scanf("%s", &a[SIZE]);
+    printf("%s", a[SIZE]);
     return 0;
 }
