@@ -11,3 +11,7 @@ print("naver", "kakao", "sk", "samsung", sep="/")
 
 print("first", end=" ")
 print("seconds")
+
+string = "dk2jd923i1dk2jd93jfd92jd918943jfd8923"
+
+print(len(string))
