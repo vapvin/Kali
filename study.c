@@ -1,5 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS
-#include <stdio.h>
+#include <stdio.h> // 전처리 구문을 통한 헤더파일을 불러옴
 #include <string.h>
 #include <stdlib.h>
 #define SIZE 1000
@@ -12,3 +12,5 @@ int main(void)
     printf("%s", a[SIZE]); // 입력받은 값을 출력
     return 0;
 }
+
+// 이후 디버깅을 통한 어셈블리 동작을 확인
