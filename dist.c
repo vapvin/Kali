@@ -33,6 +33,35 @@ void show()
     }
 }
 
+int brr[SIZE];
+
+int counts = 0;
+
+void plusBack(int data)
+{
+    brr[counts] = data;
+    counts++;
+}
+
+void plusFirst(int data)
+{
+    for (int i = counts; i >= 1; i--)
+    {
+        brr[i] = brr[i - 1];
+    }
+
+    brr[0] = data;
+    counts++;
+}
+
+void look()
+{
+    for (int i = 0; i < counts; i++)
+    {
+        printf("%d", brr[i]);
+    }
+}
+
 int main(void)
 {
     addBack(5);
@@ -43,5 +72,14 @@ int main(void)
     addFirst(9);
     addFirst(1);
     show();
+    printf("\n");
+    plusBack(5);
+    plusBack(8);
+    plusBack(7);
+    plusBack(2);
+    plusBack(3);
+    plusFirst(9);
+    plusFirst(1);
+    look();
     return 0;
 }
