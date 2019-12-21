@@ -14,3 +14,11 @@ _start:
 
     cmp r9, 0
     jp _done 
+
+    mov cl, [r9]
+    movzx r9, cl
+    sub r9, 0x30
+
+    mov r8, r9
+    xor r9, r9
+    call _syscall
