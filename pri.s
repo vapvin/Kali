@@ -11,3 +11,6 @@ _start:
     mov rdx, 1
     mov r10, 0
     mov r9, [rsp + 16]
+
+    cmp r9, 0
+    jp _done 
