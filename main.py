@@ -8,3 +8,6 @@ print("오늘은 월요일")
 print("naver", "kakao", "sk", "samsung", sep=";")
 
 print("naver", "kakao", "sk", "samsung", sep="/")
+
+print("first", end=" ")
+print("seconds")
